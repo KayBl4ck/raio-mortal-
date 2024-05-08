@@ -17,7 +17,7 @@ public class RaioMortal extends Robot {
                 fire(1);
                 execute();
                 // Espera 0.25 segundos entre cada tiro
-                waitFor(250);
+                espereFor(250);
             }
             // Movimento para a frente
             ahead(100);

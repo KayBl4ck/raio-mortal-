@@ -1,0 +1,38 @@
+import robocode.*;
+
+public class MeuRobo extends Robot {
+    
+    public void run() {
+        // Configura a cor do robô para laranja
+        setBodyColor(java.awt.Color.ORANGE);
+        setGunColor(java.awt.Color.ORANGE);
+        setRadarColor(java.awt.Color.ORANGE);
+        
+        // Loop infinito de movimentos e disparos
+        while (true) {
+            // Movimento para a direita
+            ahead(100);
+            // Disparos
+            for (int i = 0; i < 4; i++) {
+                fire(1);
+                execute();
+                // Espera 0.25 segundos entre cada tiro
+                waitFor(250);
+            }
+            // Movimento para a frente
+            ahead(100);
+            // Movimento para a esquerda
+            back(100);
+            // Movimento para trás
+            back(100);
+            // Movimento para a frente
+            ahead(100);
+        }
+    }
+    
+    public void onHitByBullet(HitByBulletEvent e) {
+        // Se atingido por uma bala, move para frente e para trás
+        ahead(100);
+        back(100);
+    }
+}

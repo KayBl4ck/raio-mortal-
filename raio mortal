@@ -1,6 +1,6 @@
 import robocode.*;
 
-public class raio mortal extends Robot {
+public class RaioMortal extends Robot {
     
     public void run() {
         // Configura a cor do robô para laranja

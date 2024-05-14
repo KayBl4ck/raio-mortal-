@@ -19,7 +19,7 @@ public class RaioMortal extends AdvancedRobot {
             for(int i = 0; i < 4; i++) {
                 fogo 1); // ajuste a potência do tiro conforme necessário
                 // Aguarda 1 segundo entre cada tiro
-                espereFor(1);
+                //espereFor(1);
 
             }
             

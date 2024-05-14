@@ -1,7 +1,7 @@
 import robocode.*;
 import java.awt.Color;
 
-public class RaioMortal extends Robot {
+public class RaioMortal extends AdvancedRobot {
     
     public void run() {
         // Define a cor do robô para laranja

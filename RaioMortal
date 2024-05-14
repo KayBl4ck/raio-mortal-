@@ -14,12 +14,7 @@ public class RaioMortal extends AdvancedRobot {
             
             // Vira 90 graus à esquerda
             turnLeft(90);
-            
-            // Atira 4 vezes
-            for(int i = 0; i < 4; i++) {
-                fire(1); // ajuste a potência do tiro conforme necessário
-                // Aguarda 1 segundo entre cada tiro
-                waitFor(1);
+    
             }
             
             // Vira a arma para a direita 90 graus
